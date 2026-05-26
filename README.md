@@ -17,3 +17,33 @@ Example query:
 
 ```text
 Analyze NVIDIA’s recent earnings performance and compare it against AMD.
+```
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone <repo-url>
+cd Enterprise-AI-Financial-Research-Platform
+```
+
+Install dependencies:
+
+```bash
+bun install
+```
+
+Start the development server:
+
+```bash
+bun run dev
+```
+
+Frontend runs at:
+
+```text
+http://localhost:5173
+```
+
+---
