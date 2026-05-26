@@ -28,13 +28,38 @@ git clone <repo-url>
 cd Enterprise-AI-Financial-Research-Platform
 ```
 
-Install dependencies:
+## Running Locally
+
+### Install Bun
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+source ~/.zshrc
+```
+
+---
+
+### Ensure Node.js is Up To Date
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.zshrc
+
+nvm install 22
+nvm use 22
+```
+
+---
+
+### Install Dependencies
 
 ```bash
 bun install
 ```
 
-Start the development server:
+---
+
+### Start Development Server
 
 ```bash
 bun run dev
@@ -47,3 +72,7 @@ http://localhost:5173
 ```
 
 ---
+
+### Future Note
+
+Docker-based local development will be added later so contributors will not need to manually install Bun, Node.js, and other local dependencies directly on their machine.
