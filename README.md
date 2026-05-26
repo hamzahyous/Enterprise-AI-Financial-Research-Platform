@@ -28,8 +28,6 @@ git clone <repo-url>
 cd Enterprise-AI-Financial-Research-Platform
 ```
 
-## Running Locally
-
 ### Install Bun
 
 ```bash
@@ -68,7 +66,7 @@ bun run dev
 Frontend runs at:
 
 ```text
-http://localhost:5173
+http://localhost:8080
 ```
 
 ---
