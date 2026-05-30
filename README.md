@@ -79,6 +79,12 @@ https://massive.com/landing-p/edgar-filings-api?utm_term=edgar%20filings%20api&u
 
 ---
 
+### APIs
+
+https://fred.stlouisfed.org/docs/api/fred/ 
+
+---
+
 ### Future Note
 
 Docker-based local development will be added later so contributors will not need to manually install Bun, Node.js, and other local dependencies directly on their machine.
