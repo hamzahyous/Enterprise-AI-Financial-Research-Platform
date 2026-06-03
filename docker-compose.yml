@@ -1,0 +1,10 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/backend
+    ports:
+      - "8000:8000"
+    command: sleep infinity
