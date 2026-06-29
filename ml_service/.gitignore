@@ -1,0 +1,6 @@
+ml_service/chunks.pkl
+ml_service/faiss_index.bin
+ml_service/sec-edgar-filings/
+__pycache__/
+*.pyc
+.env
