@@ -1,0 +1,11 @@
+[
+  {
+    "question": "What are NVIDIA's biggest risks?",
+    "expected_topics": ["export controls", "supply chain", "competition"]
+  },
+  {
+    "question": "What regulatory risks does NVIDIA face?",
+    "expected_topics": ["regulation", "export restrictions"]
+  }
+] 
+
