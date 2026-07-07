@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer, CrossEncoder
 import faiss
 import pickle
 import numpy as np
+from pathlib import Path
 
 
 # -------------------------
@@ -24,12 +25,14 @@ reranker = CrossEncoder(
 # Load Vector DB
 # -------------------------
 
+ML_SERVICE_DIR = Path(__file__).resolve().parents[2]
+
 index = faiss.read_index(
-    "faiss_index.bin"
+    str(ML_SERVICE_DIR / "faiss_index.bin")
 )
 
 
-with open("chunks.pkl", "rb") as f:
+with open(ML_SERVICE_DIR / "chunks.pkl", "rb") as f:
     chunks = pickle.load(f)
 
 

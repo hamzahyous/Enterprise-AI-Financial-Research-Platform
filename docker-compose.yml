@@ -1,7 +1,8 @@
 services:
   backend:
     build:
-      context: ./backend
+      context: .
+      dockerfile: backend/Dockerfile
     volumes:
       - .:/workspace
     working_dir: /workspace/backend

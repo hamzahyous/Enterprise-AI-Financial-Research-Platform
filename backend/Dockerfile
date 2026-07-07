@@ -6,8 +6,11 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /workspace/backend
 
-COPY requirements.txt .
-RUN pip install --upgrade pip && pip install -r requirements.txt
+COPY backend/requirements.txt /tmp/backend-requirements.txt
+COPY ml_service/requirements.txt /tmp/ml-requirements.txt
+RUN pip install --upgrade pip \
+    && pip install -r /tmp/backend-requirements.txt \
+    && pip install -r /tmp/ml-requirements.txt
 
 # terminal branch naming convention baked into image workspace <branch-name>$...
 RUN cat <<'EOF' >> /root/.bashrc
