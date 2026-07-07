@@ -1,3 +1,7 @@
 sec-edgar-downloader
 faiss-cpu
 sentence-transformers
+beautifulsoup4
+groq
+numpy
+pydantic
